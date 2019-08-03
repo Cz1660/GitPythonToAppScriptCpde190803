@@ -22,15 +22,15 @@ class TestAppToLogin:
         self.Dv = ReturnPage(GetDriver().get_driver(TestUseCaseAppToAiYouPing.app_package, TestUseCaseAppToAiYouPing.
                                                     app_activity))
         time.sleep(2)
-        for i in range(3):
-            # 屏幕向左滑动
-            self.Dv.driver.swipe(1051, 921, 26, 928, 0)
-            time.sleep(0.3)
-        # 点击进入爱优品
-        self.Dv.return_page().click_info_ayp_button()
-        time.sleep(1)
-        # 点击始终允许
-        self.Dv.return_page().click_allow_button()
+        # for i in range(3):
+        #     # 屏幕向左滑动
+        #     self.Dv.driver.swipe(1051, 921, 26, 928, 0)
+        #     time.sleep(0.3)
+        # # 点击进入爱优品
+        # self.Dv.return_page().click_info_ayp_button()
+        # time.sleep(1)
+        # # 点击始终允许
+        # self.Dv.return_page().click_allow_button()
         time.sleep(1)
         # 点击我的按钮
         self.Dv.driver.tap([(943, 1866), (1001, 1905)], 0)
